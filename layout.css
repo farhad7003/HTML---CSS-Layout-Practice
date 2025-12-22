@@ -9,12 +9,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
     background-color: var(--bg-color);
     color: white;
 }
+
 
 header, nav, section, aside, footer {
     border: 2px solid var(--border-color);
@@ -23,10 +25,10 @@ header, nav, section, aside, footer {
 header{
     padding: 8px 0;
     height: 70px;
-    margin: 8px 0;
+    margin: 10px 0;
 }
 nav{
-     padding: 8px 0;
+    padding: 10px 0;
     height: 50px;
     margin: 8px 0;
 }
