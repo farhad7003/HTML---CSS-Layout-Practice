@@ -1,0 +1,71 @@
+:root {
+    --bg-color: rgb(88, 85, 85);
+    --border-color: white;
+    --section-border: chartreuse;
+    --header-height: 70px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+header, nav, section, aside, footer {
+    border: 2px solid var(--border-color);
+}
+
+header{
+    padding: 8px 0;
+    height: 70px;
+    margin: 8px 0;
+}
+nav{
+     padding: 8px 0;
+    height: 50px;
+    margin: 8px 0;
+}
+.top-section{
+    width: 70%;
+    
+}
+
+.top-section section{
+    width: 49%;
+    height: 250px;
+    border-color: chartreuse;
+    float: left;
+    margin-right: 3px;
+}
+.top-section section:last-child{
+    width: 49%;
+    height: 250px;
+    border-color: chartreuse;
+    float:left
+}
+aside{
+    width: 30%;
+    min-height: 400px;
+    height: 100%;
+    border-color: blue;
+    float: right;
+}
+.clear-fix{
+    clear: both;
+}
+.last-section{
+    height: 150px;
+    width: 69%;
+    float: left;
+    border-color: rgb(231, 4, 4);
+}
+footer{
+    height: 220px;
+    border-color: cyan;
+    color:aqua;
+}
