@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: green;
+    --text-color: white;
+}
+body{
+    background-color: darkgrey;}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(61, 108, 13);
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.nav-links li{
+    position: relative;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3 ease;
+    display: block;
+}
+.nav-links li:hover{
+    background: rgb(99, 171, 27);
+    border-radius: 4px;
+
+}
+.dropdown{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: rgb(134, 213, 54);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translate(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    /* visibility: hidden; */
+    opacity: 0;
+}
+.Service:hover .dropdown{
+    opacity: 1;
+    transform: translate(0px);
+    pointer-events: auto;
+}
