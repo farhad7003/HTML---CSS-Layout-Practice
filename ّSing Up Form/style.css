@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* بخش سبز سمت چپ */
+.image-section {
+    flex: 1.2;
+    background-color: #5e8d5a; /* رنگ سبز مشابه عکس شما */
+}
+
+/* بخش فرم سمت راست */
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #5e8d5a;
+}
+
+/* دکمه ثبت نام */
+.submit-btn {
+    width: 120px;
+    padding: 12px;
+    background-color: #93c47d; /* رنگ دکمه شما */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    float: right; /* برای قرار گرفتن در سمت راست مثل عکس */
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5e8d5a;
+}
