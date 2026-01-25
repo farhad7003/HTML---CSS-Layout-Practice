@@ -3,33 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Site</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">CodeRank</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li><a href="#home" class="nav__link">Home</a></li>
-                    <li><a href="#about" class="nav__link">About me</a></li>
-                    <li><a href="#projects" class="nav__link">Projects</a></li>
-                    <li><a href="#resume" class="nav__link">Resume</a></li>
-                    <li><a href="#contact" class="nav__link">Contact me</a></li>
-                </ul>
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div>
-                <div class="nav__toggel" id="nav-toggle"><i class="ri-menu-3-fill"></i></div>
-        </nav>
-    </header>
-    <script src="main.js"></script>
+    <header>
+    <div class="logo">Logo</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="btn">Get Started</div>
+</header>
+    <div class="hero">
+    <div class="bussiness">
+        <h1>bussiness is the all</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor quis laudantium assumenda distinctio porro minima, architecto ut veritatis magni, impedit molestiae nisi adipisci! Quod nemo mollitia delectus iusto esse?</p>
+        <div class="bussiness-btn">Learn More</div>
+    </div>
+    <div class="image">
+        <img src="image-card.jpg" alt="">
+    </div>
+</div>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    document.querySelectorAll('#main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
